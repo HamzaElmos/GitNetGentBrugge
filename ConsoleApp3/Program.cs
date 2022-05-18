@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Hello, World!");
 
-static int Optellen(int getal1, int getal2)
+static int Optellen(params int[] getallen )
 {
-    return getal1 + getal2;
+    return getallen.Sum(x=>x);
 }
